@@ -54,9 +54,14 @@
         flex-flow: wrap;
 }
 
+.img-responsive {
+        max-width: 100%;
+}
+
 [class*='col-'] div {
         background-color: gray;  /* ----- EXPLICIT for EX7 ----- */
-        height: 200px;
+        height: 100%;
+        padding: 10px;
 }
 
 [class*='col-'] {
@@ -227,6 +232,20 @@
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+
+.row:last-child {
+        justify-content: center;
+}
+
+#bg-hand {
+        background: url(../img/hand.jpg) no-repeat center;
+        -webkit-backgrond-size: cover;
+        -o-backgrond-size: cover;
+        -moz-backgrond-size: cover;
+        -ms-backgrond-size: cover;
+        background-size: cover;
+        background-clip: content-box;
+}
 
 /* ----- NAVIGATION ----- */
 
